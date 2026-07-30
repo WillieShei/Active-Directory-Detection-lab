@@ -23,8 +23,7 @@ All detections, field extractions, and saved searches live in a self-contained S
 | Detection | Technique | Data source | Status |
 |-----------|-----------|-------------|--------|
 | [Kerberoasting — RC4 Service Ticket Request](detections/kerberoasting-rc4-service-ticket.md) | [T1558.003](https://attack.mitre.org/techniques/T1558/003/) | 4769 | Validated |
-
-*(more to follow — LSASS credential access on Sysmon EID 10 is next)*
+| [LSASS Credential Access — Unexpected Source](detections/lsass-credential-access.md) | [T1003.001](https://attack.mitre.org/techniques/T1003/001/) | Sysmon EID 10 | Validated |
 
 ## Approach
 
@@ -39,3 +38,6 @@ The point of this lab is the engineering discipline, not the volume of rules:
 
 Built on the Splunk Enterprise free tier. Scheduled alerting is available on the trial and is disabled when the trial converts to Splunk Free, so scheduled-search behaviour is captured while it is available.
 
+## Note on lab values
+
+Hostnames, the domain name (`corp.local`), and network addressing in this repository are generic placeholders. Passwords and any environment-specific identifiers have been redacted.
